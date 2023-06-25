@@ -1,0 +1,303 @@
+[2023-06-25T11:51:24.426896Z INFO  pgcat::client] Client 118.99.107.86:30867 connected (plain)
+[2023-06-25T11:51:24.438776Z DEBUG pgcat::query_router] Using pool settings, query_parser_enabled: false
+[2023-06-25T11:51:24.438801Z DEBUG pgcat::query_router] Using pool settings, query_parser_enabled: false
+[2023-06-25T11:51:24.438820Z DEBUG pgcat::client] Waiting for connection from pool
+[2023-06-25T11:51:24.438831Z DEBUG pgcat::pool] Address { id: 1, host: "10.10.96.9", port: 5432, shard: 0, database: "sirup-prod", role: Replica, replica_number: 0, address_index: 1, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 9, query_count: 18, bytes_received: 16324, bytes_sent: 6427, xact_time: 0, query_time: 237, wait_time: 2238, errors: 0 }, current: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } } is ok
+[2023-06-25T11:51:24.438869Z DEBUG pgcat::pool] Running health check on server Address { id: 1, host: "10.10.96.9", port: 5432, shard: 0, database: "sirup-prod", role: Replica, replica_number: 0, address_index: 1, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 9, query_count: 18, bytes_received: 16324, bytes_sent: 6427, xact_time: 0, query_time: 237, wait_time: 2238, errors: 0 }, current: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.438890Z DEBUG pgcat::server] Running `;` on server Address { id: 1, host: "10.10.96.9", port: 5432, shard: 0, database: "sirup-prod", role: Replica, replica_number: 0, address_index: 1, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 9, query_count: 18, bytes_received: 16324, bytes_sent: 6427, xact_time: 0, query_time: 237, wait_time: 2238, errors: 0 }, current: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.439232Z DEBUG pgcat::client] Got connection from pool
+[2023-06-25T11:51:24.439248Z DEBUG pgcat::client] Client 118.99.107.86:30867 talking to server Address { id: 1, host: "10.10.96.9", port: 5432, shard: 0, database: "sirup-prod", role: Replica, replica_number: 0, address_index: 1, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 9, query_count: 18, bytes_received: 16335, bytes_sent: 6434, xact_time: 0, query_time: 237, wait_time: 3033, errors: 0 }, current: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 11, bytes_sent: 7, xact_time: 0, query_time: 0, wait_time: 795, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.439266Z DEBUG pgcat::client] Prepared statement active: None
+[2023-06-25T11:51:24.439269Z DEBUG pgcat::client] Sending query to server
+[2023-06-25T11:51:24.439273Z DEBUG pgcat::client] Sending S to server
+[2023-06-25T11:51:24.439704Z DEBUG pgcat::server] Server connection marked for clean up
+[2023-06-25T11:51:24.439725Z DEBUG pgcat::server] Server in transaction: false
+[2023-06-25T11:51:24.439729Z DEBUG pgcat::client] Releasing server back into the pool
+[2023-06-25T11:51:24.439732Z DEBUG pgcat::server] Server in transaction: false
+[2023-06-25T11:51:24.439735Z WARN  pgcat::server] Server returned with session state altered, discarding state (SET: true, PREPARE: false) for application pgcat
+[2023-06-25T11:51:24.439739Z DEBUG pgcat::server] Running `DISCARD ALL` on server Address { id: 1, host: "10.10.96.9", port: 5432, shard: 0, database: "sirup-prod", role: Replica, replica_number: 0, address_index: 1, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 10, query_count: 19, bytes_received: 16360, bytes_sent: 6497, xact_time: 0, query_time: 237, wait_time: 3033, errors: 0 }, current: AddressStatFields { xact_count: 1, query_count: 1, bytes_received: 36, bytes_sent: 70, xact_time: 0, query_time: 0, wait_time: 795, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.440086Z DEBUG pgcat::server] Running `RESET ROLE` on server Address { id: 1, host: "10.10.96.9", port: 5432, shard: 0, database: "sirup-prod", role: Replica, replica_number: 0, address_index: 1, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 10, query_count: 19, bytes_received: 16406, bytes_sent: 6514, xact_time: 0, query_time: 237, wait_time: 3033, errors: 0 }, current: AddressStatFields { xact_count: 1, query_count: 1, bytes_received: 82, bytes_sent: 87, xact_time: 0, query_time: 0, wait_time: 795, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.446032Z DEBUG pgcat::query_router] Using pool settings, query_parser_enabled: true
+[2023-06-25T11:51:24.446049Z DEBUG pgcat::query_router] Prepared statement: 'SET application_name = 'PostgreSQL JDBC Driver''
+[2023-06-25T11:51:24.446053Z DEBUG sqlparser::parser] Parsing sql 'SET application_name = 'PostgreSQL JDBC Driver''...
+[2023-06-25T11:51:24.446075Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.446081Z DEBUG sqlparser::parser] prefix: Value(SingleQuotedString("PostgreSQL JDBC Driver"))
+[2023-06-25T11:51:24.446088Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: EOF, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.446094Z DEBUG sqlparser::parser] 0: EOF 1: EOF 2: EOF
+[2023-06-25T11:51:24.446098Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.446111Z INFO  pgcat::plugins::query_logger] [pool: postgres][user: sirup-prod] SET application_name = 'PostgreSQL JDBC Driver'
+[2023-06-25T11:51:24.446116Z DEBUG pgcat::query_router] Inferring role
+[2023-06-25T11:51:24.446147Z DEBUG pgcat::query_router] Using pool settings, query_parser_enabled: true
+[2023-06-25T11:51:24.446154Z DEBUG pgcat::query_router] Parsing bind message
+[2023-06-25T11:51:24.446158Z DEBUG pgcat::query_router] There are no placeholders in the prepared statement that matched the automatic sharding key
+[2023-06-25T11:51:24.446173Z DEBUG pgcat::client] Waiting for connection from pool
+[2023-06-25T11:51:24.446184Z DEBUG pgcat::pool] Address { id: 0, host: "10.10.96.5", port: 5432, shard: 0, database: "sirup-prod", role: Primary, replica_number: 0, address_index: 0, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 11, query_count: 12, bytes_received: 2642, bytes_sent: 2326, xact_time: 0, query_time: 23, wait_time: 2093, errors: 0 }, current: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } } is ok
+[2023-06-25T11:51:24.446213Z DEBUG pgcat::pool] Running health check on server Address { id: 0, host: "10.10.96.5", port: 5432, shard: 0, database: "sirup-prod", role: Primary, replica_number: 0, address_index: 0, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 11, query_count: 12, bytes_received: 2642, bytes_sent: 2326, xact_time: 0, query_time: 23, wait_time: 2093, errors: 0 }, current: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.446227Z DEBUG pgcat::server] Running `;` on server Address { id: 0, host: "10.10.96.5", port: 5432, shard: 0, database: "sirup-prod", role: Primary, replica_number: 0, address_index: 0, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 11, query_count: 12, bytes_received: 2642, bytes_sent: 2326, xact_time: 0, query_time: 23, wait_time: 2093, errors: 0 }, current: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.446618Z DEBUG pgcat::client] Got connection from pool
+[2023-06-25T11:51:24.446658Z DEBUG pgcat::client] Client 118.99.107.86:30867 talking to server Address { id: 0, host: "10.10.96.5", port: 5432, shard: 0, database: "sirup-prod", role: Primary, replica_number: 0, address_index: 0, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 11, query_count: 12, bytes_received: 2653, bytes_sent: 2333, xact_time: 0, query_time: 23, wait_time: 2954, errors: 0 }, current: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 11, bytes_sent: 7, xact_time: 0, query_time: 0, wait_time: 861, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.446690Z DEBUG pgcat::client] Prepared statement active: None
+[2023-06-25T11:51:24.446695Z DEBUG pgcat::client] Sending query to server
+[2023-06-25T11:51:24.446700Z DEBUG pgcat::client] Sending S to server
+[2023-06-25T11:51:24.447273Z DEBUG pgcat::server] Server connection marked for clean up
+[2023-06-25T11:51:24.447305Z DEBUG pgcat::server] Server in transaction: false
+[2023-06-25T11:51:24.447310Z DEBUG pgcat::client] Releasing server back into the pool
+[2023-06-25T11:51:24.447314Z DEBUG pgcat::server] Server in transaction: false
+[2023-06-25T11:51:24.447317Z WARN  pgcat::server] Server returned with session state altered, discarding state (SET: true, PREPARE: false) for application pgcat
+[2023-06-25T11:51:24.447321Z DEBUG pgcat::server] Running `DISCARD ALL` on server Address { id: 0, host: "10.10.96.5", port: 5432, shard: 0, database: "sirup-prod", role: Primary, replica_number: 0, address_index: 0, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 12, query_count: 13, bytes_received: 2723, bytes_sent: 2417, xact_time: 0, query_time: 23, wait_time: 2954, errors: 0 }, current: AddressStatFields { xact_count: 1, query_count: 1, bytes_received: 81, bytes_sent: 91, xact_time: 0, query_time: 0, wait_time: 861, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.447629Z DEBUG pgcat::server] Running `RESET ROLE` on server Address { id: 0, host: "10.10.96.5", port: 5432, shard: 0, database: "sirup-prod", role: Primary, replica_number: 0, address_index: 0, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 12, query_count: 13, bytes_received: 2769, bytes_sent: 2434, xact_time: 0, query_time: 23, wait_time: 2954, errors: 0 }, current: AddressStatFields { xact_count: 1, query_count: 1, bytes_received: 127, bytes_sent: 108, xact_time: 0, query_time: 0, wait_time: 861, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.453561Z DEBUG pgcat::query_router] Using pool settings, query_parser_enabled: true
+[2023-06-25T11:51:24.453581Z DEBUG pgcat::query_router] Prepared statement: 'SET SESSION CHARACTERISTICS AS TRANSACTION ISOLATION LEVEL READ COMMITTED'
+[2023-06-25T11:51:24.453586Z DEBUG sqlparser::parser] Parsing sql 'SET SESSION CHARACTERISTICS AS TRANSACTION ISOLATION LEVEL READ COMMITTED'...
+[2023-06-25T11:51:24.453620Z INFO  pgcat::plugins::query_logger] [pool: postgres][user: sirup-prod] SET SESSION CHARACTERISTICS AS TRANSACTION ISOLATION LEVEL READ COMMITTED
+[2023-06-25T11:51:24.453625Z DEBUG pgcat::query_router] Inferring role
+[2023-06-25T11:51:24.453631Z DEBUG pgcat::query_router] Using pool settings, query_parser_enabled: true
+[2023-06-25T11:51:24.453635Z DEBUG pgcat::query_router] Parsing bind message
+[2023-06-25T11:51:24.453638Z DEBUG pgcat::query_router] There are no placeholders in the prepared statement that matched the automatic sharding key
+[2023-06-25T11:51:24.453648Z DEBUG pgcat::client] Waiting for connection from pool
+[2023-06-25T11:51:24.453654Z DEBUG pgcat::pool] Address { id: 0, host: "10.10.96.5", port: 5432, shard: 0, database: "sirup-prod", role: Primary, replica_number: 0, address_index: 0, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 12, query_count: 13, bytes_received: 2786, bytes_sent: 2450, xact_time: 0, query_time: 23, wait_time: 2954, errors: 0 }, current: AddressStatFields { xact_count: 1, query_count: 1, bytes_received: 144, bytes_sent: 124, xact_time: 0, query_time: 0, wait_time: 861, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } } is ok
+[2023-06-25T11:51:24.453674Z DEBUG pgcat::pool] Running health check on server Address { id: 0, host: "10.10.96.5", port: 5432, shard: 0, database: "sirup-prod", role: Primary, replica_number: 0, address_index: 0, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 12, query_count: 13, bytes_received: 2786, bytes_sent: 2450, xact_time: 0, query_time: 23, wait_time: 2954, errors: 0 }, current: AddressStatFields { xact_count: 1, query_count: 1, bytes_received: 144, bytes_sent: 124, xact_time: 0, query_time: 0, wait_time: 861, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.453688Z DEBUG pgcat::server] Running `;` on server Address { id: 0, host: "10.10.96.5", port: 5432, shard: 0, database: "sirup-prod", role: Primary, replica_number: 0, address_index: 0, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 12, query_count: 13, bytes_received: 2786, bytes_sent: 2450, xact_time: 0, query_time: 23, wait_time: 2954, errors: 0 }, current: AddressStatFields { xact_count: 1, query_count: 1, bytes_received: 144, bytes_sent: 124, xact_time: 0, query_time: 0, wait_time: 861, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.454145Z DEBUG pgcat::client] Got connection from pool
+[2023-06-25T11:51:24.454171Z DEBUG pgcat::client] Client 118.99.107.86:30867 talking to server Address { id: 0, host: "10.10.96.5", port: 5432, shard: 0, database: "sirup-prod", role: Primary, replica_number: 0, address_index: 0, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 12, query_count: 13, bytes_received: 2797, bytes_sent: 2457, xact_time: 0, query_time: 23, wait_time: 3928, errors: 0 }, current: AddressStatFields { xact_count: 1, query_count: 1, bytes_received: 155, bytes_sent: 131, xact_time: 0, query_time: 0, wait_time: 1835, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.454206Z DEBUG pgcat::client] Prepared statement active: None
+[2023-06-25T11:51:24.454212Z DEBUG pgcat::client] Sending query to server
+[2023-06-25T11:51:24.454218Z DEBUG pgcat::client] Sending S to server
+[2023-06-25T11:51:24.454716Z DEBUG pgcat::server] Server connection marked for clean up
+[2023-06-25T11:51:24.454740Z DEBUG pgcat::server] Server in transaction: false
+[2023-06-25T11:51:24.454745Z DEBUG pgcat::client] Releasing server back into the pool
+[2023-06-25T11:51:24.454749Z DEBUG pgcat::server] Server in transaction: false
+[2023-06-25T11:51:24.454752Z WARN  pgcat::server] Server returned with session state altered, discarding state (SET: true, PREPARE: false) for application pgcat
+[2023-06-25T11:51:24.454756Z DEBUG pgcat::server] Running `DISCARD ALL` on server Address { id: 0, host: "10.10.96.5", port: 5432, shard: 0, database: "sirup-prod", role: Primary, replica_number: 0, address_index: 0, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 13, query_count: 14, bytes_received: 2822, bytes_sent: 2567, xact_time: 0, query_time: 23, wait_time: 3928, errors: 0 }, current: AddressStatFields { xact_count: 2, query_count: 2, bytes_received: 180, bytes_sent: 241, xact_time: 0, query_time: 0, wait_time: 1835, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.455014Z DEBUG pgcat::server] Running `RESET ROLE` on server Address { id: 0, host: "10.10.96.5", port: 5432, shard: 0, database: "sirup-prod", role: Primary, replica_number: 0, address_index: 0, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 13, query_count: 14, bytes_received: 2868, bytes_sent: 2584, xact_time: 0, query_time: 23, wait_time: 3928, errors: 0 }, current: AddressStatFields { xact_count: 2, query_count: 2, bytes_received: 226, bytes_sent: 258, xact_time: 0, query_time: 0, wait_time: 1835, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.460642Z DEBUG pgcat::query_router] Using pool settings, query_parser_enabled: true
+[2023-06-25T11:51:24.460676Z DEBUG pgcat::query_router] Prepared statement: 'BEGIN'
+[2023-06-25T11:51:24.460681Z DEBUG sqlparser::parser] Parsing sql 'BEGIN'...
+[2023-06-25T11:51:24.460700Z INFO  pgcat::plugins::query_logger] [pool: postgres][user: sirup-prod] START TRANSACTION
+[2023-06-25T11:51:24.460705Z DEBUG pgcat::query_router] Inferring role
+[2023-06-25T11:51:24.460710Z DEBUG pgcat::query_router] Using pool settings, query_parser_enabled: true
+[2023-06-25T11:51:24.460714Z DEBUG pgcat::query_router] Parsing bind message
+[2023-06-25T11:51:24.460717Z DEBUG pgcat::query_router] There are no placeholders in the prepared statement that matched the automatic sharding key
+[2023-06-25T11:51:24.460721Z DEBUG pgcat::query_router] Using pool settings, query_parser_enabled: true
+[2023-06-25T11:51:24.460725Z DEBUG pgcat::query_router] Prepared statement: ' SELECT id, created_by, created_on, nama_lengkap, nip, ktp, nrp, jenis, email, password, encrypted_username_ppk, jabatan, alamat, golongan, nomor_telepon, update_by, update_on, username, role, id_satker, is_deleted, nosk, id_kldi, pa, username_lpse, is_verified, is_email_valid, id_client, role_2, id_lpse, peg_id FROM pengguna   WHERE   username = $1 '
+[2023-06-25T11:51:24.460731Z DEBUG sqlparser::parser] Parsing sql ' SELECT id, created_by, created_on, nama_lengkap, nip, ktp, nrp, jenis, email, password, encrypted_username_ppk, jabatan, alamat, golongan, nomor_telepon, update_by, update_on, username, role, id_satker, is_deleted, nosk, id_kldi, pa, username_lpse, is_verified, is_email_valid, id_client, role_2, id_lpse, peg_id FROM pengguna   WHERE   username = $1 '...
+[2023-06-25T11:51:24.460776Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.460789Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "id", quote_style: None })
+[2023-06-25T11:51:24.460799Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.460809Z DEBUG sqlparser::parser] 0: , 1: created_by 2: ,
+[2023-06-25T11:51:24.460817Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.460827Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.460834Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "created_by", quote_style: None })
+[2023-06-25T11:51:24.460842Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.460850Z DEBUG sqlparser::parser] 0: , 1: created_on 2: ,
+[2023-06-25T11:51:24.460857Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.460865Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.460873Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "created_on", quote_style: None })
+[2023-06-25T11:51:24.460881Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.460889Z DEBUG sqlparser::parser] 0: , 1: nama_lengkap 2: ,
+[2023-06-25T11:51:24.460897Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.460906Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.460916Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "nama_lengkap", quote_style: None })
+[2023-06-25T11:51:24.460929Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.460935Z DEBUG sqlparser::parser] 0: , 1: nip 2: ,
+[2023-06-25T11:51:24.460940Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.460945Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.460976Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "nip", quote_style: None })
+[2023-06-25T11:51:24.460987Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.460999Z DEBUG sqlparser::parser] 0: , 1: ktp 2: ,
+[2023-06-25T11:51:24.461005Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461015Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461027Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "ktp", quote_style: None })
+[2023-06-25T11:51:24.461033Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461045Z DEBUG sqlparser::parser] 0: , 1: nrp 2: ,
+[2023-06-25T11:51:24.461055Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461066Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461104Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "nrp", quote_style: None })
+[2023-06-25T11:51:24.461111Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461121Z DEBUG sqlparser::parser] 0: , 1: jenis 2: ,
+[2023-06-25T11:51:24.461132Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461143Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461155Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "jenis", quote_style: None })
+[2023-06-25T11:51:24.461166Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461178Z DEBUG sqlparser::parser] 0: , 1: email 2: ,
+[2023-06-25T11:51:24.461189Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461221Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461227Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "email", quote_style: None })
+[2023-06-25T11:51:24.461231Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461241Z DEBUG sqlparser::parser] 0: , 1: password 2: ,
+[2023-06-25T11:51:24.461247Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461254Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461266Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "password", quote_style: None })
+[2023-06-25T11:51:24.461278Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461288Z DEBUG sqlparser::parser] 0: , 1: encrypted_username_ppk 2: ,
+[2023-06-25T11:51:24.461300Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461311Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461322Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "encrypted_username_ppk", quote_style: None })
+[2023-06-25T11:51:24.461334Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461346Z DEBUG sqlparser::parser] 0: , 1: jabatan 2: ,
+[2023-06-25T11:51:24.461356Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461368Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461379Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "jabatan", quote_style: None })
+[2023-06-25T11:51:24.461390Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461401Z DEBUG sqlparser::parser] 0: , 1: alamat 2: ,
+[2023-06-25T11:51:24.461450Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461459Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461482Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "alamat", quote_style: None })
+[2023-06-25T11:51:24.461494Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461506Z DEBUG sqlparser::parser] 0: , 1: golongan 2: ,
+[2023-06-25T11:51:24.461517Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461528Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461563Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "golongan", quote_style: None })
+[2023-06-25T11:51:24.461574Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461586Z DEBUG sqlparser::parser] 0: , 1: nomor_telepon 2: ,
+[2023-06-25T11:51:24.461594Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461624Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461637Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "nomor_telepon", quote_style: None })
+[2023-06-25T11:51:24.461649Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461662Z DEBUG sqlparser::parser] 0: , 1: update_by 2: ,
+[2023-06-25T11:51:24.461673Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461684Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461696Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "update_by", quote_style: None })
+[2023-06-25T11:51:24.461706Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461712Z DEBUG sqlparser::parser] 0: , 1: update_on 2: ,
+[2023-06-25T11:51:24.461722Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461733Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461739Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "update_on", quote_style: None })
+[2023-06-25T11:51:24.461749Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461777Z DEBUG sqlparser::parser] 0: , 1: username 2: ,
+[2023-06-25T11:51:24.461785Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461798Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461809Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "username", quote_style: None })
+[2023-06-25T11:51:24.461838Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461846Z DEBUG sqlparser::parser] 0: , 1: role 2: ,
+[2023-06-25T11:51:24.461853Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461864Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461874Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "role", quote_style: None })
+[2023-06-25T11:51:24.461884Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461894Z DEBUG sqlparser::parser] 0: , 1: id_satker 2: ,
+[2023-06-25T11:51:24.461923Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461930Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.461937Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "id_satker", quote_style: None })
+[2023-06-25T11:51:24.461949Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.461959Z DEBUG sqlparser::parser] 0: , 1: is_deleted 2: ,
+[2023-06-25T11:51:24.461983Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.461991Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.462003Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "is_deleted", quote_style: None })
+[2023-06-25T11:51:24.462014Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462023Z DEBUG sqlparser::parser] 0: , 1: nosk 2: ,
+[2023-06-25T11:51:24.462179Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.462206Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.462219Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "nosk", quote_style: None })
+[2023-06-25T11:51:24.462233Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462246Z DEBUG sqlparser::parser] 0: , 1: id_kldi 2: ,
+[2023-06-25T11:51:24.462270Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.462280Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.462292Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "id_kldi", quote_style: None })
+[2023-06-25T11:51:24.462302Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462314Z DEBUG sqlparser::parser] 0: , 1: pa 2: ,
+[2023-06-25T11:51:24.462324Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.462334Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.462346Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "pa", quote_style: None })
+[2023-06-25T11:51:24.462357Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462384Z DEBUG sqlparser::parser] 0: , 1: username_lpse 2: ,
+[2023-06-25T11:51:24.462394Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.462402Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.462419Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "username_lpse", quote_style: None })
+[2023-06-25T11:51:24.462434Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462480Z DEBUG sqlparser::parser] 0: , 1: is_verified 2: ,
+[2023-06-25T11:51:24.462493Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.462507Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.462521Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "is_verified", quote_style: None })
+[2023-06-25T11:51:24.462534Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462547Z DEBUG sqlparser::parser] 0: , 1: is_email_valid 2: ,
+[2023-06-25T11:51:24.462559Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.462571Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.462601Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "is_email_valid", quote_style: None })
+[2023-06-25T11:51:24.462617Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462625Z DEBUG sqlparser::parser] 0: , 1: id_client 2: ,
+[2023-06-25T11:51:24.462629Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.462634Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.462642Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "id_client", quote_style: None })
+[2023-06-25T11:51:24.462655Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462667Z DEBUG sqlparser::parser] 0: , 1: role_2 2: ,
+[2023-06-25T11:51:24.462678Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.462690Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.462702Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "role_2", quote_style: None })
+[2023-06-25T11:51:24.462714Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462731Z DEBUG sqlparser::parser] 0: , 1: id_lpse 2: ,
+[2023-06-25T11:51:24.462736Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.462747Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.462755Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "id_lpse", quote_style: None })
+[2023-06-25T11:51:24.462761Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Comma, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462767Z DEBUG sqlparser::parser] 0: , 1: peg_id 2: FROM
+[2023-06-25T11:51:24.462771Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.462775Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.462791Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "peg_id", quote_style: None })
+[2023-06-25T11:51:24.462803Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Word(Word { value: "FROM", quote_style: None, keyword: FROM }), location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462829Z DEBUG sqlparser::parser] 0: FROM 1: pengguna 2: WHERE
+[2023-06-25T11:51:24.462836Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.462853Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.462863Z DEBUG sqlparser::parser] prefix: Identifier(Ident { value: "username", quote_style: None })
+[2023-06-25T11:51:24.462872Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: Eq, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462882Z DEBUG sqlparser::parser] 0: = 1: $1 2: EOF
+[2023-06-25T11:51:24.462888Z DEBUG sqlparser::parser] next precedence: 20
+[2023-06-25T11:51:24.462893Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.462903Z DEBUG sqlparser::parser] prefix: Value(Placeholder("$1"))
+[2023-06-25T11:51:24.462910Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: EOF, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462916Z DEBUG sqlparser::parser] 0: EOF 1: EOF 2: EOF
+[2023-06-25T11:51:24.462919Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.462922Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: EOF, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.462926Z DEBUG sqlparser::parser] 0: EOF 1: EOF 2: EOF
+[2023-06-25T11:51:24.462929Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.462975Z INFO  pgcat::plugins::query_logger] [pool: postgres][user: sirup-prod] SELECT id, created_by, created_on, nama_lengkap, nip, ktp, nrp, jenis, email, password, encrypted_username_ppk, jabatan, alamat, golongan, nomor_telepon, update_by, update_on, username, role, id_satker, is_deleted, nosk, id_kldi, pa, username_lpse, is_verified, is_email_valid, id_client, role_2, id_lpse, peg_id FROM pengguna WHERE username = $1
+[2023-06-25T11:51:24.462989Z DEBUG pgcat::query_router] Inferring role
+[2023-06-25T11:51:24.462998Z DEBUG pgcat::query_router] Using pool settings, query_parser_enabled: true
+[2023-06-25T11:51:24.463001Z DEBUG pgcat::query_router] Parsing bind message
+[2023-06-25T11:51:24.463004Z DEBUG pgcat::query_router] There are no placeholders in the prepared statement that matched the automatic sharding key
+[2023-06-25T11:51:24.463021Z DEBUG pgcat::client] Waiting for connection from pool
+[2023-06-25T11:51:24.463031Z DEBUG pgcat::pool] Address { id: 1, host: "10.10.96.9", port: 5432, shard: 0, database: "sirup-prod", role: Replica, replica_number: 0, address_index: 1, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 10, query_count: 19, bytes_received: 16423, bytes_sent: 6530, xact_time: 0, query_time: 237, wait_time: 3033, errors: 0 }, current: AddressStatFields { xact_count: 1, query_count: 1, bytes_received: 99, bytes_sent: 103, xact_time: 0, query_time: 0, wait_time: 795, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } } is ok
+[2023-06-25T11:51:24.463062Z DEBUG pgcat::pool] Running health check on server Address { id: 1, host: "10.10.96.9", port: 5432, shard: 0, database: "sirup-prod", role: Replica, replica_number: 0, address_index: 1, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 10, query_count: 19, bytes_received: 16423, bytes_sent: 6530, xact_time: 0, query_time: 237, wait_time: 3033, errors: 0 }, current: AddressStatFields { xact_count: 1, query_count: 1, bytes_received: 99, bytes_sent: 103, xact_time: 0, query_time: 0, wait_time: 795, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.463107Z DEBUG pgcat::server] Running `;` on server Address { id: 1, host: "10.10.96.9", port: 5432, shard: 0, database: "sirup-prod", role: Replica, replica_number: 0, address_index: 1, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 10, query_count: 19, bytes_received: 16423, bytes_sent: 6530, xact_time: 0, query_time: 237, wait_time: 3033, errors: 0 }, current: AddressStatFields { xact_count: 1, query_count: 1, bytes_received: 99, bytes_sent: 103, xact_time: 0, query_time: 0, wait_time: 795, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.463519Z DEBUG pgcat::client] Got connection from pool
+[2023-06-25T11:51:24.463551Z DEBUG pgcat::client] Client 118.99.107.86:30867 talking to server Address { id: 1, host: "10.10.96.9", port: 5432, shard: 0, database: "sirup-prod", role: Replica, replica_number: 0, address_index: 1, username: "postgres", pool_name: "sirup-prod", mirrors: [], stats: AddressStats { total: AddressStatFields { xact_count: 10, query_count: 19, bytes_received: 16434, bytes_sent: 6537, xact_time: 0, query_time: 237, wait_time: 4003, errors: 0 }, current: AddressStatFields { xact_count: 1, query_count: 1, bytes_received: 110, bytes_sent: 110, xact_time: 0, query_time: 0, wait_time: 1765, errors: 0 }, averages: AddressStatFields { xact_count: 0, query_count: 0, bytes_received: 0, bytes_sent: 0, xact_time: 0, query_time: 0, wait_time: 0, errors: 0 }, averages_updated: false } }
+[2023-06-25T11:51:24.463569Z DEBUG pgcat::client] Prepared statement active: None
+[2023-06-25T11:51:24.463582Z DEBUG pgcat::client] Sending query to server
+[2023-06-25T11:51:24.463592Z DEBUG pgcat::client] Sending S to server
+[2023-06-25T11:51:24.466655Z DEBUG pgcat::server] Server in transaction: true
+[2023-06-25T11:51:24.466675Z DEBUG pgcat::client] Prepared statement active: None
+[2023-06-25T11:51:24.475554Z DEBUG pgcat::query_router] Using pool settings, query_parser_enabled: true
+[2023-06-25T11:51:24.475579Z DEBUG pgcat::query_router] Prepared statement: ' SELECT nextval('pengguna_id_seq') '
+[2023-06-25T11:51:24.475583Z DEBUG sqlparser::parser] Parsing sql ' SELECT nextval('pengguna_id_seq') '...
+[2023-06-25T11:51:24.475599Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.475607Z DEBUG sqlparser::parser] parsing expr
+[2023-06-25T11:51:24.475612Z DEBUG sqlparser::parser] prefix: Value(SingleQuotedString("pengguna_id_seq"))
+[2023-06-25T11:51:24.475631Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: RParen, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.475644Z DEBUG sqlparser::parser] 0: ) 1: EOF 2: EOF
+[2023-06-25T11:51:24.475653Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.475663Z DEBUG sqlparser::parser] prefix: Function(Function { name: ObjectName([Ident { value: "nextval", quote_style: None }]), args: [Unnamed(Expr(Value(SingleQuotedString("pengguna_id_seq"))))], over: None, distinct: false, special: false, order_by: [] })
+[2023-06-25T11:51:24.475682Z DEBUG sqlparser::parser] get_next_precedence() TokenWithLocation { token: EOF, location: Location { line: 0, column: 0 } }
+[2023-06-25T11:51:24.475691Z DEBUG sqlparser::parser] 0: EOF 1: EOF 2: EOF
+[2023-06-25T11:51:24.475702Z DEBUG sqlparser::parser] next precedence: 0
+[2023-06-25T11:51:24.475729Z INFO  pgcat::plugins::query_logger] [pool: postgres][user: sirup-prod] SELECT nextval('pengguna_id_seq')
+[2023-06-25T11:51:24.475760Z DEBUG pgcat::client] Prepared statement active: None
+[2023-06-25T11:51:24.475770Z DEBUG pgcat::client] Prepared statement active: None
+[2023-06-25T11:51:24.475775Z DEBUG pgcat::client] Prepared statement active: None
+[2023-06-25T11:51:24.475792Z DEBUG pgcat::client] Prepared statement active: None
+[2023-06-25T11:51:24.475804Z DEBUG pgcat::client] Sending query to server
+[2023-06-25T11:51:24.475815Z DEBUG pgcat::client] Sending S to server
+[2023-06-25T11:51:24.476622Z DEBUG pgcat::server] Server in transaction: true
+[2023-06-25T11:51:24.476641Z DEBUG pgcat::client] Prepared statement active: None
+[2023-06-25T11:51:25.509187Z DEBUG pgcat::query_router] Using pool settings, query_parser_enabled: true
+[2023-06-25T11:51:25.509240Z DEBUG pgcat::query_router] Prepared statement: 'ROLLBACK'
+[2023-06-25T11:51:25.509246Z DEBUG sqlparser::parser] Parsing sql 'ROLLBACK'...
+[2023-06-25T11:51:25.509267Z INFO  pgcat::plugins::query_logger] [pool: postgres][user: sirup-prod] ROLLBACK
+[2023-06-25T11:51:25.509273Z DEBUG pgcat::client] Prepared statement active: None
+[2023-06-25T11:51:25.509279Z DEBUG pgcat::client] Prepared statement active: None
+[2023-06-25T11:51:25.509288Z DEBUG pgcat::client] Prepared statement active: None
+[2023-06-25T11:51:25.509292Z DEBUG pgcat::client] Sending query to server
+[2023-06-25T11:51:25.509299Z DEBUG pgcat::client] Sending S to server
+[2023-06-25T11:51:25.509856Z DEBUG pgcat::server] Server in transaction: false
+[2023-06-25T11:51:25.509884Z DEBUG pgcat::client] Releasing server back into the pool
+[2023-06-25T11:51:25.509892Z DEBUG pgcat::server] Server in transaction: false
+[2023-06-25T11:51:25.515541Z DEBUG pgcat::client] Client disconnecting
+[2023-06-25T11:51:25.515666Z INFO  pgcat] Client 118.99.107.86:30867 disconnected, session duration: 0d 00:00:01.100
